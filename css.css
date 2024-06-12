@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fffb00;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 30px 10px;
+    margin: 0;
+    text-align: center;
+}
+#myList {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#myList li {
+   
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+#myList li:last-child {
+    border-bottom: none;
+}
+
+#myList li input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+#myList li.checked {
+    color: #888;
+}
+
+#myList li.checked input[type="checkbox"] {
+    position: relative;
+}
+
+#myList li.checked input[type="checkbox"]:before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background-color: #333;
+    transform: rotate(45deg);
+    top: 0;
+    left: 50%;
+}

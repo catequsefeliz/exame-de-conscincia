@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Contato</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="css2.css">
+    <link rel="shortcut icon" href="logo_catequese-removebg-preview (1).png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body class="js1 bodycntt bodycontato">
+    
+    <header>
+        <nav>
+            <div class="header">
+                <img src="logo_catequese-removebg-preview (1).png" alt="Logo" class="Minha-logo">
+                <ul class="menu">
+                    <li><a href="index.html">Exame de Conciência</a></li>
+                    <li><a href="Oraçoes.html">Orações</a></li>
+                    <li><a href="pagina de contato.html">Página de Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+            <section>
+                <br>
+                <br>
+                <br>
+                <div class="boxcntt">
+                    <div class="contentbox">
+                        <div class="containercntt">
+                            <form id="formulario" action="mailto:catequesefeliz.taquara@gmail.com" method="post" enctype="text/plain">
+                                <div class="msg">
+                                    <h2>Entre em Contato</h2>
+                                </div>
+                                <div class="input-field">
+                                    <input type="text" name="Nome" size="30" maxlength="50" class="input" placeholder="Nome" required>
+                                    <i class="bx bx-Nome"></i>
+                                </div>
+                                <div class="input-field">
+                                    <input type="text" name="Assunto" size="30" maxlength="50" class="input" placeholder="Assunto" required>
+                                    <i class="bx bx-lock-alt"></i>
+                                </div>
+                                <div class="msg">
+                                    <p>Mensagem</p>
+                                    <textarea name="Mensagem" cols="30" rows="5" placeholder="Digite sua mensagem" class="input msg1" required></textarea>
+                                </div>
+                                <div class="input-field">
+                                    <input type="submit" value="Enviar Mensagem" class="submit">
+                                    <br>
+                                    <br>
+                                   
+                                </div>
+                                <div class="redes-sociais"></div>
+                                <a class="instagram" href="https://www.instagram.com/catequesefeliztaquara?igsh=YWFocnplZDNnb2Fk">
+                                    <img src="Instagram_icon.png" alt="logo instagram" height="100" width="100"></a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+    <br>
+    <br>
+    <br>
+
+    <script>
+        function fadeIn(element) {
+            var opacity = 0;
+            element.style.display = "block";
+            var timer = setInterval(function() {
+                if (opacity >= 1) {
+                    clearInterval(timer);
+                }
+                element.style.opacity = opacity;
+                element.style.filter = "alpha(opacity=" + opacity * 100 + ")";
+                opacity += 0.1;
+            }, 50);
+        }
+
+        window.onload = function() {
+            fadeIn(document.getElementById('contactArticle'));
+        };
+
+        function clickMenu() {
+            var itens = document.querySelector('.menu');
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none';
+            } else {
+                itens.style.display = 'block';
+            }
+        }
+        window.onload = function() {
+        document.body.style.opacity = "1";
+        };
+    </script>
+    <style>
+        .imagem-inferior-direita {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            width: 100px; /* Ajuste o tamanho da imagem conforme necessário */
+        }
+    </style>
+</head>
+<body class="js1 bodysobre">
+
+    <img src="igreja-removebg-preview.png" alt="logo" class="imagem-inferior-direita">
+</body>
+</html>
